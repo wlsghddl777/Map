@@ -74,6 +74,18 @@
                 buildingIcon = new myIcon({iconUrl: 'image/myicon_building.png'});
                 villageIcon = new myIcon({iconUrl: 'image/myicon_village.png'});
                 Placeholder = new myIcon({iconUrl: 'image/Placeholder.png'});
+                p2 = new myIcon({iconUrl: 'image/2.png'});
+                p3 = new myIcon({iconUrl: 'image/3.png'});
+                p4 = new myIcon({iconUrl: 'image/4.png'});
+                p5 = new myIcon({iconUrl: 'image/5.png'});
+                p6 = new myIcon({iconUrl: 'image/6.png'});
+                p7 = new myIcon({iconUrl: 'image/7.png'});
+                p8 = new myIcon({iconUrl: 'image/8.png'});
+                p9 = new myIcon({iconUrl: 'image/9.png'});
+                p10 = new myIcon({iconUrl: 'image/10.png'});
+                p11 = new myIcon({iconUrl: 'image/11.png'});
+                
+
 
                 L.icon = function (options) {
                     return new L.Icon(options);
@@ -90,7 +102,6 @@
             var part_9 = L.layerGroup();
             var part_10 = L.layerGroup();  
             var part_11 = L.layerGroup();  
-            var part_12 = L.layerGroup();  
 
 
 
@@ -98,15 +109,15 @@
             var overlays = {
                 "한식":part_1,
                 "중식":part_2,
-                "일식":part_4,
-                "대만음식":part_5,
-                "베트남음식":part_6,
-                "태국음식":part_7,
-                "퓨전":part_8,
-                "프렌치":part_9,
-                "이탤리언":part_10,
-                "바비큐":part_11,
-                "스패니쉬":part_12,
+                "일식":part_3,
+                "대만음식":part_4,
+                "베트남음식":part_5,
+                "태국음식":part_6,
+                "퓨전":part_7,
+                "프렌치":part_8,
+                "이탤리언":part_9,
+                "바비큐":part_10,
+                "스패니쉬":part_11,
             };
 
 
@@ -265,17 +276,16 @@
                 pointToLayer: function(feature, latlng) { 
                     switch (feature.properties.Foodgroup) {
                                 case '한식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_1);
-                                case '중식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_2);
-                                case '양식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_3);
-                                case '일식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_4);
-                                case '대만음식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_5);
-                                case '베트남음식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_6);
-                                case '태국음식': return L.marker(latlng, {icon: buildingIcon}).addTo(part_7);
-                                case '퓨전': return L.marker(latlng, {icon: buildingIcon}).addTo(part_8);
-                                case '프렌치': return L.marker(latlng, {icon: buildingIcon}).addTo(part_9);
-                                case '이탤리언': return L.marker(latlng, {icon: buildingIcon}).addTo(part_10);
-                                case '바비큐': return L.marker(latlng, {icon: buildingIcon}).addTo(part_11);
-                                case '스패니쉬': return L.marker(latlng, {icon: buildingIcon}).addTo(part_12);
+                                case '중식': return L.marker(latlng, {icon: p2}).addTo(part_2);
+                                case '일식': return L.marker(latlng, {icon: p3}).addTo(part_4);
+                                case '대만음식': return L.marker(latlng, {icon: p4}).addTo(part_5);
+                                case '베트남음식': return L.marker(latlng, {icon: p5}).addTo(part_6);
+                                case '태국음식': return L.marker(latlng, {icon: p6}).addTo(part_7);
+                                case '퓨전': return L.marker(latlng, {icon: p7}).addTo(part_8);
+                                case '프렌치': return L.marker(latlng, {icon: p8}).addTo(part_9);
+                                case '이탤리언': return L.marker(latlng, {icon: p9}).addTo(part_10);
+                                case '바비큐': return L.marker(latlng, {icon: p10}).addTo(part_11);
+                                case '스패니쉬': return L.marker(latlng, {icon: p11}).addTo(part_12);
          
                     }}
                 });
